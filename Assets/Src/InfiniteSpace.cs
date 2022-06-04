@@ -8,8 +8,11 @@ public class InfiniteSpace : MonoBehaviour
     private GameObject _spaceTile;
     [SerializeField]
     private Transform _referenceTransform;
+    [SerializeField]
+    private float _parallaxFactor;
 
     private Vector2 _tileSize;
+    private Vector2 _initialTilesOrigin;
     private Vector2 _tilesOrigin;
     private List<GameObject> _tilePool;
     private Vector2Int _curTileCoords;
@@ -21,10 +24,11 @@ public class InfiniteSpace : MonoBehaviour
             tileSpriteRenderer.bounds.size.x,
             tileSpriteRenderer.bounds.size.y
         );
-        _tilesOrigin = new Vector2(
+        _initialTilesOrigin = new Vector2(
             _referenceTransform.position.x,
             _referenceTransform.position.y
         );
+        _tilesOrigin = _initialTilesOrigin;
         _tilePool = new List<GameObject>();
         for(int i = 0; i < 9; i++)
         {
@@ -37,13 +41,11 @@ public class InfiniteSpace : MonoBehaviour
 
     private void Update()
     {
-        var tileCoords = positionToTileCoords(_referenceTransform.position);
-        Debug.Log(tileCoords);
-        if (tileCoords != _curTileCoords)
-        {
-            _curTileCoords = tileCoords;
-            redrawTiles();
-        }
+        _curTileCoords = positionToTileCoords(_referenceTransform.position);
+        _tilesOrigin = _initialTilesOrigin +
+            ((Vector2)_referenceTransform.position - _initialTilesOrigin)
+            * _parallaxFactor;
+        redrawTiles();
     }
 
     private void redrawTiles()
