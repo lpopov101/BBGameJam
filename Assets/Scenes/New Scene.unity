@@ -150,12 +150,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134708763}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 009d4af61a7bf46949f68b124d5f5c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   torque: 300
+  secondsDelay: 1
 --- !u!247 &134708765
 ConstantForce2D:
   m_ObjectHideFlags: 0
@@ -164,7 +165,7 @@ ConstantForce2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134708763}
   m_Enabled: 1
-  m_Force: {x: 0, y: -1}
+  m_Force: {x: 0, y: -0.02}
   m_RelativeForce: {x: 0, y: 0}
   m_Torque: 30
 --- !u!50 &134708766
@@ -366,12 +367,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674776631}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 009d4af61a7bf46949f68b124d5f5c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   torque: 300
+  secondsDelay: 1
 --- !u!247 &674776633
 ConstantForce2D:
   m_ObjectHideFlags: 0
@@ -380,7 +382,7 @@ ConstantForce2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674776631}
   m_Enabled: 1
-  m_Force: {x: 0, y: -1}
+  m_Force: {x: 0, y: -0.02}
   m_RelativeForce: {x: 0, y: 0}
   m_Torque: 30
 --- !u!50 &674776634
@@ -498,12 +500,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536859206}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 009d4af61a7bf46949f68b124d5f5c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   torque: 300
+  secondsDelay: 1
 --- !u!247 &1536859208
 ConstantForce2D:
   m_ObjectHideFlags: 0
@@ -512,7 +515,7 @@ ConstantForce2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536859206}
   m_Enabled: 1
-  m_Force: {x: 0, y: -1}
+  m_Force: {x: 0, y: -0.02}
   m_RelativeForce: {x: 0, y: 0}
   m_Torque: 30
 --- !u!50 &1536859209
@@ -630,12 +633,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091684344}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 009d4af61a7bf46949f68b124d5f5c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   torque: 300
+  secondsDelay: 1
 --- !u!247 &2091684346
 ConstantForce2D:
   m_ObjectHideFlags: 0
@@ -644,7 +648,7 @@ ConstantForce2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091684344}
   m_Enabled: 1
-  m_Force: {x: 0, y: -1}
+  m_Force: {x: 0, y: -0.02}
   m_RelativeForce: {x: 0, y: 0}
   m_Torque: 30
 --- !u!50 &2091684347
@@ -728,7 +732,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091684344}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.13, y: 2.95, z: 0}
+  m_LocalPosition: {x: 4.4, y: 3.74, z: 0}
   m_LocalScale: {x: 0.1186, y: 0.1186, z: 0.1186}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -762,12 +766,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133587594}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 009d4af61a7bf46949f68b124d5f5c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   torque: 300
+  secondsDelay: 1
 --- !u!247 &2133587596
 ConstantForce2D:
   m_ObjectHideFlags: 0
@@ -776,7 +781,7 @@ ConstantForce2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133587594}
   m_Enabled: 1
-  m_Force: {x: 0, y: -1}
+  m_Force: {x: 0, y: -0.02}
   m_RelativeForce: {x: 0, y: 0}
   m_Torque: 30
 --- !u!50 &2133587597
@@ -895,7 +900,7 @@ ConstantForce2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2144218179}
   m_Enabled: 1
-  m_Force: {x: 0, y: -1}
+  m_Force: {x: 0, y: -0.02}
   m_RelativeForce: {x: 0, y: 0}
   m_Torque: 30
 --- !u!50 &2144218181
@@ -979,7 +984,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2144218179}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.21, y: 3.56, z: 0}
+  m_LocalPosition: {x: -5.05, y: 3.49, z: 0}
   m_LocalScale: {x: 0.1186, y: 0.1186, z: 0.1186}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -993,9 +998,10 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2144218179}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 009d4af61a7bf46949f68b124d5f5c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   torque: 300
+  secondsDelay: 1
