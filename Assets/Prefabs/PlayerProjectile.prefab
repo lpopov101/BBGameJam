@@ -155,5 +155,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damage: 10
   _destructionParticle: {fileID: 6277266293880456047, guid: c33a7ee4a3632df4d9f05fa2224bec5e, type: 3}
-  _destructionParticleLifetime: 5
-  _velocity: 10
+  _velocity: 20

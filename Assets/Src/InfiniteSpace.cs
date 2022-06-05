@@ -85,8 +85,10 @@ public class InfiniteSpace : MonoBehaviour
 
     private Quaternion tileCoordsToRotation(Vector2Int tileCoords)
     {
+        var state = Random.state;
         Random.InitState((tileCoords.x + tileCoords.y) - tileCoords.y/2);
         var angleMultiplier = Random.Range(0, 4);
+        Random.state = state;
         return Quaternion.Euler(0, 0, 90F * angleMultiplier);
     }
 }

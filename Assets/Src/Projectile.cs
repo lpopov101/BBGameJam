@@ -8,20 +8,17 @@ public class Projectile : MonoBehaviour
     private float _damage;
     [SerializeField]
     private GameObject _destructionParticle;
-    [SerializeField]
-    private float _destructionParticleLifetime;
 
     private void OnCollisionEnter2D(Collision2D col)
     {
         foreach(var damageable in col.gameObject.GetComponents<IDamageable>())
         {
-            damageable.takeDamage(_damage);
+            damageable.takeDamage(_damage, "Projectile");
         }
         var destructionParticle = Instantiate(
             _destructionParticle,
             col.contacts[0].point,
             transform.rotation);
-        Destroy(destructionParticle, _destructionParticleLifetime);
         Destroy(gameObject);
     }
 }

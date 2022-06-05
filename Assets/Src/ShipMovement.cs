@@ -15,6 +15,10 @@ public class ShipMovement : MonoBehaviour
     private float _autoBrakeForce;
     [SerializeField]
     private float _collisionRepulsionForce;
+    [SerializeField]
+    private PlayerEnergy _playerEnergy;
+    [SerializeField]
+    private float _energyDrainRate;
 
     private Rigidbody2D _rb;
     private float _thrustInput = 0F;
@@ -37,6 +41,11 @@ public class ShipMovement : MonoBehaviour
         applyThrust();
         applyTurning();
         applyAutoBrake();
+        
+        if(_thrustInput > 0F)
+        {
+            _playerEnergy.depleteEnergy(_energyDrainRate * Time.fixedDeltaTime);
+        }
     }
 
     private void applyThrust()

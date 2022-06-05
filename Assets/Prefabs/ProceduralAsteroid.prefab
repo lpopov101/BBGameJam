@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1758482088931780237}
   - component: {fileID: 1758482088931780238}
   - component: {fileID: 1758482088931780235}
+  - component: {fileID: 6389023811286211344}
+  - component: {fileID: 3414617059006302981}
   m_Layer: 0
   m_Name: ProceduralAsteroid
   m_TagString: Untagged
@@ -139,7 +141,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-  m_SpriteShape: {fileID: 0}
+  m_SpriteShape: {fileID: 11400000, guid: 30a6ff08b77a6064db18dfeaea5cceb0, type: 2}
   m_FillPixelPerUnit: 100
   m_StretchTiling: 1
   m_SplineDetail: 16
@@ -202,3 +204,44 @@ PolygonCollider2D:
       - {x: -0.6018766, y: -0.66666675}
       - {x: -0.64967906, y: -0.6666667}
       - {x: -0.6666667, y: -0.6666667}
+--- !u!114 &6389023811286211344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758482088931780242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6feab9e92ffdd6f4fad8fde22612c08b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _asteroidFragment: {fileID: 9197759391186639028, guid: 4275e1cbd5a184d48b5b1f30093f2435, type: 3}
+  _fractureEffect: {fileID: 5110308660678592986, guid: d2483ec77fc8fa2418b5d37b540b8f84, type: 3}
+  _fractureRadius: 1.5
+  _numFragments: 4
+  _initDriftForce: {x: -0.25, y: -0.125}
+  _initDriftTorque: 0.2
+  _initDriftVariation: 0.05
+  _fragmentDriftForce: 2
+--- !u!50 &3414617059006302981
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758482088931780242}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 3
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
